@@ -1,0 +1,10 @@
+.slide-down {
+    animation: slide-down 0.5s forwards;
+    transform: translateY(-100px);
+}
+
+@keyframes slide-down {
+    to{
+        transform: translateY(0);
+    }
+}

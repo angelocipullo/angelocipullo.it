@@ -1,0 +1,10 @@
+
+:root{
+    --color: rgb(243, 70, 2);
+}
+
+.btn {
+    padding: 1rem 1.5;
+    background-color: var(--color);
+    
+}
