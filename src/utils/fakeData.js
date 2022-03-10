@@ -8,11 +8,11 @@ export default [
         tags: ['ReactJS', 'React Router', 'React Dnd', 'Firebase']
     },
     {
-        slug:'trello-clone',
-        title:'Trello Clone',
-        description: 'Description Proj 2',
-        photos: ['https://i.imgur.com/WEnshAG.png', 'https://i.imgur.com/pyN5Jxz.png'],
-        demoUrl:'https://react-web-player.netlify.app',
-        tags:['Hello']
+        slug:'morra-cinese',
+        title:'Morra Cinese',
+        description: 'Morra Cinese è un progetto didattico realizzato in team con un collega, lo scopo era quello di integrare un gioco banale come sasso, carta, forbici in un contesto reale. Nel nostro caso abbiamo scelto un agenzia di viaggi',
+        photos: ['https://i.imgur.com/4QQP8Pb.png', 'https://i.imgur.com/4Iq21wv.png', 'https://i.imgur.com/fB040Ex.png'],
+        demoUrl:'https://morra-cinese-beije.netlify.app',
+        tags:['ReactJS', "ParticlesJS"]
     }
 ]

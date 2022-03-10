@@ -37,7 +37,7 @@ const ProjectsViewer = (props) => {
 
     return (
         <>
-            <div ref={ref} className='h-[30rem] mx-auto rounded aspect-video max-w-3xl'>
+            <div ref={ref} className='lg:h-[20rem] 2xl:h-[30rem] mx-auto rounded aspect-video max-w-3xl'>
                 <animated.div
                     className='shadow'
                     style={{ transform: springProps.xys.to(trans) }}

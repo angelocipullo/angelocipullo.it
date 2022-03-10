@@ -11,9 +11,9 @@ const ProjectsInfo = (props) => {
     }
 
     return (
-        <div className='bg-white relative shadow max-w-md p-8 rounded ml-6 '>
+        <div className='bg-white overflow-hidden relative shadow lg:max-w-sm 2xl:max-w-md lg:p-4 2xl:p-8 rounded ml-6 '>
             <p>Desktop/Mobile</p>
-            <p className='font-bold text-3xl font-primary'>{props.title}</p>
+            <p className='font-bold lg:text-2xl 2xl:text-3xl font-primary'>{props.title}</p>
             <Tags data={props.tags} />
             <p>{props.description}</p>
             <Button

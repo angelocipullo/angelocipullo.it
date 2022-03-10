@@ -16,7 +16,7 @@ const ProjectsCommands = (props) => {
     }
 
     return (
-        <div className='flex relative max-w-md mt-4 ml-6 '>
+        <div className='flex relative lg:max-w-sm 2xl:max-w-md mt-4 ml-6 '>
 
             <div onClick={prevProject} className='flex shadow mr-2 space-x-2 cursor-pointer justify-center flex-1 items-center p-2 rounded bg-white'>
                 <FontAwesomeIcon icon={faChevronLeft} />
