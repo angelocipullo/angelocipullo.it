@@ -27,9 +27,20 @@ const Bio = (props) => {
             <Fade triggerOnce cascade direction={"up"} delay={500}>
                 <p className='mt-4 text-3xl font-regular'>
                     I'm <B>Angelo</B>,
-                    and I'm a <B>{age}</B> years old Developer
+                    and I'm a <B>{age}</B> years old <B>self-taught</B> Front End Developer currently livin' in  <span className='ita-gradient font-bold'>Italy</span>.
+                    <br /> <br />
+                    Since when I was a kid, moved by the curiosity of how a website is made,
+                    I started to study Web Languages by myself.
+                    <br /> <br />
+                    I started learning the basics, so HTML, CSS and JavaScript, then i moved to PHP with MySql Database; I understood
+                    the big differences between Frontend and Backend and then I practised a lot.
+                    <br/><br/>
+                    Later on my road, I discovered React and React Native, and I fell in love. Nowadays I use them for building all of my 
+                    best personal projects and for helping businesses to reach their goals.
+
+                    I 
                 </p>
-                <p className='text-3xl'>currently livin' in  <span className='ita-gradient font-bold'>Italy</span></p>
+                
             </Fade>
 
 

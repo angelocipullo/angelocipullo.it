@@ -1,29 +1,22 @@
 import React from 'react'
+import config from '../../utils/config';
 
 // components
 import Timeline from '../Timeline/Timeline';
 
 const Jobs = (props) => {
 
+    return (
+        <div className={props.className}>
+            <p className='text-5xl font-bold'>Jobs</p>
 
-  let jobs = [
-    { title: "Frontend Developer", subtitle:"My first job as a Developer", date:"January 2022 - Today" },
-    { title: 'Start'}
-]
-
-
-
-  return (
-    <div className={props.className}>
-      <p className='text-5xl font-bold'>Jobs</p>
-
-      <Timeline 
-        data={jobs}
-      />
+            <Timeline
+                data={config.jobs}
+            />
 
 
-    </div>
-  )
+        </div>
+    )
 }
 
 

@@ -14,7 +14,7 @@
 }
 
 .timeline__component--bg {
-  padding: 1.4em;
+  padding: 1em;
   background: rgb(255, 244, 244);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -45,14 +45,13 @@
 .timeline__point--bottom {
   top: initial;
   bottom: 0;
-  font-family: "Inter";
-  font-weight: 200;
 }
 
 .timeline__date--right {
   text-align: right;
-  font-family: "Inter";
-  font-weight: 200;
   color: #fff
 }
 
+.no-family{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
