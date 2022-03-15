@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import "./Home.css"
 
 import { animated, useTransition } from 'react-spring'
 
+// utils
+import { scrollTo } from '../utils/scrollTo'
 
 // ui components
 import Logotype from '../components/Logotype/Logotype'
@@ -19,6 +21,8 @@ import Projects from './Projects'
 
 const Home = () => {
 
+    const aboutRef = useRef()
+    const skillsRef = useRef()
 
     const [viewProjects, setViewProjects] = useState(false);
     const toggleProjects = () => setViewProjects(!viewProjects)
@@ -28,7 +32,6 @@ const Home = () => {
         from: { opacity: 0, scale: 0.5 },
         enter: { opacity: 1, scale: 1},
         leave: { opacity: 0, scale: 3},
-        
     })
 
     let navbar = useTransition(viewProjects, {
@@ -52,6 +55,10 @@ const Home = () => {
         leave: { x: 100, opacity: 0 },
     })
 
+    const scrollToAbout = () => aboutRef.current.scrollIntoView()
+    const scrollToSkill = () => skillsRef.current.scrollIntoView()
+    
+
     return (
         <div>
             <div className='min-h-screen flex relative bg'>
@@ -59,7 +66,11 @@ const Home = () => {
                    <p className='absolute top-2 left-2 font-bold'>THIS IS AN INCOMPLETE DEMO BUILD</p>
                     {navbar((styles, viewProjects) => !viewProjects &&
                         <animated.div className='absolute top-0 right-0 left-0' style={styles}>
-                            <Navbar toggleProjects={toggleProjects} />
+                            <Navbar 
+                                scrollToAbout={scrollToAbout}  
+                                scrollToSkill={scrollToSkill}
+                                toggleProjects={toggleProjects} 
+                            />
                         </animated.div>
                     )}
                     
@@ -103,8 +114,8 @@ const Home = () => {
 
             <div className='min-h-screen z-50 text-2xl text-white bg-[#273036]'>
                 <div className='max-w-3xl  pt-40 min-h-screen mx-auto'>
-                    <Bio className='' />
-                    <Skills className='mt-40' />
+                    <Bio ref={aboutRef} className='' />
+                    <Skills ref={skillsRef} className='mt-40' />
                     <Jobs className='mt-40' />
                 </div>
 

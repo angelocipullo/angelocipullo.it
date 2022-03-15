@@ -19,12 +19,13 @@ const Navbar = ( props ) => {
         leave: { y: -100 }
     })
 
+
     return (
         <>
             <div className=' hidden md:flex w-full h-20'>
                 <div className='flex flex-1 justify-center items-center text-2xl space-x-10 font-[900]  tracking-tight'>
-                    <p className=' font-primary '>chi sono</p>
-                    <p className=' font-primary '>skill</p>
+                    <p onClick={props.scrollToAbout} className=' font-primary '>chi sono</p>
+                    <p onClick={props.scrollToSkill} className=' font-primary '>skill</p>
                     <p onClick={props.toggleProjects} className=' font-primary '>progetti</p>
                     <p className=' font-primary '>get in touch</p>
                 </div>
