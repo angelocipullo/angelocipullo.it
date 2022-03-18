@@ -25,8 +25,9 @@ const ProjectsViewer = (props) => {
                 <div
                     onClick={() => setPhotoId(key)}
                     className='shadow border-1 hover:scale-110 transition border-black cursor-pointer mr-4 bg-gray-300 rounded h-20 aspect-video'
-                    style={{ background: `url(${img})`, backgroundSize: 'cover' }}
-                />
+                >
+                    <img src={img} className='object-cover' />
+                </div>
             )
         } else {
             return null

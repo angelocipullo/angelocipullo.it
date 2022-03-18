@@ -63,7 +63,7 @@ const Home = () => {
         <div>
             <div className='min-h-screen flex relative bg'>
                 <div className={'h-screen relative overflow-hidden flex flex-1 justify-center items-center'} >
-                   <p className='absolute top-2 left-2 font-bold'>THIS IS AN INCOMPLETE DEMO BUILD</p>
+                   <p className='absolute top-2 left-2 font-bold'>*THIS IS AN INCOMPLETE DEMO BUILD</p>
                     {navbar((styles, viewProjects) => !viewProjects &&
                         <animated.div className='absolute top-0 right-0 left-0' style={styles}>
                             <Navbar 
@@ -120,7 +120,7 @@ const Home = () => {
                 </div>
 
             </div>
-        </div >
+        </div>
     )
 }
 

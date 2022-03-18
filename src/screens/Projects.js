@@ -18,7 +18,7 @@ const Projects = ( props ) => {
         <>
             <div className='flex-1 max-w-lg'>
                 <div className='flex  max-w-md mb-4 rounded p-2 ml-6'>
-                    <div onClick={props.toggleProjects} className='cursor-pointer flex items-center space-x-2 bg-white px-4 py-2 rounded-full'>
+                    <div onClick={props.toggleProjects} className='hover:scale-110 transition-all cursor-pointer flex items-center space-x-2 bg-white px-4 py-2 rounded-full'>
                         <FontAwesomeIcon icon={faArrowLeftLong} />
                         <p className='font-bold'>indietro</p>
                     </div>
