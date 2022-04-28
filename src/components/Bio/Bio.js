@@ -25,21 +25,13 @@ const Bio = React.forwardRef( (props, ref) => {
             </Slide>
 
             <Fade triggerOnce cascade direction={"up"} delay={500}>
-                <p className='mt-4 text-3xl font-regular'>
+                <p className='mt-4 text-2xl lg:text-3xl font-regular'>
                     I'm <B>Angelo</B>,
-                    and I'm a <B>{age}</B> years old <B>self-taught</B> Front End Developer currently livin' in  <span className='ita-gradient font-bold'>Italy</span>.
+                    and I'm a <B>{age}</B> years old <B>Front End Developer</B> currently livin' in  <span className='ita-gradient font-bold'>Italy</span>.
                     <br /> <br />
-                    Since when I was a 🧒<B>kid</B>, moved by the curiosity of <B>how</B> a <B>website is made</B>,
-                    I started to study 💻Web Languages by myself.
-                    <br /> <br />
-                    I started learning the <B>basics</B>, so <B>HTML, CSS and JavaScript,</B> then i moved to PHP with MySql Database; I understood
-                    the big <B>differences</B> between Frontend and Backend and then I practised a lot.
-                    <br/><br/>
-                    Later on my road, I discovered ⚛️<B className='text-blue-400'>React</B> and <B className='text-blue-400'>React Native</B>, and I fell in love. <B>Nowadays</B> I use them for building all of my 
+                    <B>Today</B> I'm developing with ⚛️<B className='text-blue-400'>React</B> and <B className='text-blue-400'>React Native</B> for building all of my 
                     best personal projects and for <B>helping businesses</B> to reach their 🎯<B>goals</B>.
-
                 </p>
-                
             </Fade>
 
 

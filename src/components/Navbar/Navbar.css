@@ -1,3 +1,8 @@
+.bg-nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
 .slide-down {
     animation: slide-down 0.5s forwards;
     transform: translateY(-100px);

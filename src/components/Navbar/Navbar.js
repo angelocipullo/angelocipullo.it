@@ -34,7 +34,7 @@ const Navbar = ( props ) => {
 
             {transitions((styles, item) => item &&
                 <animated.div style={styles} className=' w-full flex fixed z-[99] top-0 h-20 right-0 left-0'>
-                    <div className='flex bg-holo bg-opacity-10 text-black  flex-1 justify-center items-center text-2xl space-x-10 font-[900] tracking-tight'>
+                    <div className='bg-nav flex bg-opacity-10 text-black  flex-1 justify-center items-center text-2xl space-x-10 font-[900] tracking-tight'>
                         <p className=' font-primary '>chi sono</p>
                         <p className=' font-primary '>skill</p>
                         <p className=' font-primary '>progetti</p>

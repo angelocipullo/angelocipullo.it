@@ -97,7 +97,7 @@ const Home = () => {
                 </div>
 
                 {/* Waves at bottom part of the first Slide */}
-                <div className='absolute -bottom-16 left-0 right-0'>
+                <div className='hidden md:block absolute -bottom-16 left-0 right-0'>
                     <Wave
                         fill='#273036'
                         paused={false}
@@ -113,9 +113,9 @@ const Home = () => {
 
 
             <div className='min-h-screen z-50 text-2xl text-white bg-[#273036]'>
-                <div className='max-w-3xl  pt-40 min-h-screen mx-auto'>
+                <div className='max-w-3xl px-5 md:px-0 pt-40 min-h-screen mx-auto'>
                     <Bio ref={aboutRef} className='' />
-                    <Skills ref={skillsRef} className='mt-40' />
+                    {/* <Skills ref={skillsRef} className='mt-40' /> */}
                     <Jobs className='mt-40' />
                 </div>
 
