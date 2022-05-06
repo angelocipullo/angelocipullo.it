@@ -26,9 +26,9 @@ const Navbar = (props) => {
             <div className=' hidden md:flex w-full h-20'>
                 <div className='flex flex-1 justify-center items-center text-2xl space-x-10 font-[900]  tracking-tight'>
                     <p onClick={props.scrollToAbout} className={navStyle}>chi sono</p>
-                    <p onClick={props.scrollToSkill} className={navStyle}>skill</p>
+                    <p onClick={props.scrollToSkill} className={navStyle + " text-gray-400"}>skill</p>
                     <p onClick={props.toggleProjects} className={navStyle}>progetti</p>
-                    <p className={navStyle}>get in touch</p>
+                    <p className={navStyle + " text-gray-400"}>get in touch</p>
                 </div>
             </div>
 

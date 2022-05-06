@@ -119,7 +119,7 @@ const Home = () => {
                     {/* <Skills ref={skillsRef} className='mt-40' /> */}
                     <Jobs className='mt-40' />
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )
