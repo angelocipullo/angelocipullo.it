@@ -17,6 +17,7 @@ import Bio from '../components/Bio/Bio'
 import Skills from '../components/Skills/Skills'
 import Jobs from '../components/Jobs/Jobs'
 import Projects from './Projects'
+import Footer from '../components/Footer/Footer'
 
 
 const Home = () => {
@@ -63,6 +64,8 @@ const Home = () => {
         <div>
             <div className='min-h-screen flex relative bg'>
                 <div className={'h-screen relative overflow-hidden flex flex-1 justify-center items-center'} >
+                   <p className='absolute top-2 left-2 font-bold'>THIS IS DEVELOP BUILD</p>
+
                     {navbar((styles, viewProjects) => !viewProjects &&
                         <animated.div className='absolute top-0 right-0 left-0' style={styles}>
                             <Navbar 
@@ -112,12 +115,12 @@ const Home = () => {
 
 
             <div className='min-h-screen z-50 text-2xl text-white bg-[#273036]'>
-                <div className='max-w-3xl px-5 md:px-0 pt-40 min-h-screen mx-auto'>
+                <div className='pb-10 max-w-3xl px-5 md:px-0 pt-40 min-h-screen mx-auto'>
                     <Bio ref={aboutRef} className='' />
                     {/* <Skills ref={skillsRef} className='mt-40' /> */}
                     <Jobs className='mt-40' />
                 </div>
-
+                <Footer />
             </div>
         </div>
     )
