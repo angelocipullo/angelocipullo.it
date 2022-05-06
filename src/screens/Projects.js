@@ -23,24 +23,10 @@ const Projects = ( props ) => {
                         <p className='font-bold'>indietro</p>
                     </div>
                 </div>
-                <ProjectsInfo
-                    tags={proj.tags}
-                    title={proj.title}
-                    description={proj.description}
-                    demoUrl={proj.demoUrl}
-                />
-                <ProjectsCommands
-                    setId={setId}
-                    id={id}
-                    data={data}
-                />
             </div>
 
-            <div className='flex-1'>
-                <ProjectsViewer
-                    photos={proj.photos}
-                />
-
+            <div className='flex-1 flex justify-center items-center'>
+                <p className='bg-white text-4xl font-bold rounded-full py-4 shadow px-6'>projects soon avaible.</p>
             </div>
         </>
     )

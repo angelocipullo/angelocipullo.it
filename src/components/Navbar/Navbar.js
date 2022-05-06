@@ -2,7 +2,7 @@ import "./Navbar.css"
 import React, { useState } from 'react'
 import { animated, useTransition } from 'react-spring'
 
-const Navbar = ( props ) => {
+const Navbar = (props) => {
 
     let navStyle = 'cursor-pointer font-primary transition hover:-translate-y-1'
     const [show, setShow] = useState(false)
@@ -34,11 +34,17 @@ const Navbar = ( props ) => {
 
             {transitions((styles, item) => item &&
                 <animated.div style={styles} className=' w-full flex fixed z-[99] top-0 h-20 right-0 left-0'>
-                    <div className='bg-nav flex bg-opacity-10 text-black  flex-1 justify-center items-center text-2xl space-x-10 font-[900] tracking-tight'>
-                        <p className=' font-primary '>chi sono</p>
-                        <p className=' font-primary '>skill</p>
-                        <p className=' font-primary '>progetti</p>
-                        <p className=' font-primary '>get in touch</p>
+                    <div className='bg-nav bg-opacity-10 w-full flex border-b-1 border-b-gray-400 '>
+                        <div className='hidden md:flex text-black  flex-1 justify-center items-center text-2xl space-x-10 font-[900] tracking-tight'>
+                            <p className=' font-primary '>chi sono</p>
+                            <p className=' font-primary '>skill</p>
+                            <p className=' font-primary '>progetti</p>
+                            <p className=' font-primary '>get in touch</p>
+                        </div>
+                        {/* mobile navbar options */}
+                        <div className="flex px-4 md:hidden justify-center items-center">
+                            <p className='text-2xl space-x-10 font-[900] tracking-tight'>angelo cipullo</p>
+                        </div>
                     </div>
                 </animated.div>
             )}
