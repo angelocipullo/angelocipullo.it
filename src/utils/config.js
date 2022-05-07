@@ -11,5 +11,22 @@ export default {
         { label:'TailwindCSS', value: 70},
         { label:'Bootstrap', value: 65},
         { label: 'ExpressJS', value: 40 },
+    ],
+    links:[
+        {
+            label: 'Instagram',
+            url: 'http://instagram.com/angelocipullo_',
+            bgClass: 'bg-instagram'
+        },
+        {
+            label: 'Soundcloud',
+            url: 'http://soundcloud.com/angelo-musica-di',
+            bgClass: 'bg-orange-500'
+        },
+        {
+            label: 'LinkedIn',
+            url: 'http://linkedin.com/in/angelocipullo',
+            bgClass: 'bg-blue-500'
+        },
     ]
 }
