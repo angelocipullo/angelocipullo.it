@@ -29,8 +29,8 @@ const Bio = React.forwardRef( (props, ref) => {
                     I'm <B>Angelo</B>,
                     and I'm a <B>{age}</B> years old <B>Front End Developer</B> currently livin' in  <span className='ita-gradient font-bold'>Italy</span>.
                     <br /> <br />
-                    <B>Today</B> I'm developing with ⚛️<B className='text-blue-400'>React</B> and <B className='text-blue-400'>React Native</B> for building all of my 
-                    best personal projects and for <B>helping businesses</B> to reach their 🎯<B>goals</B>.
+                    I'm developing with ⚛️<B className='text-blue-400'>React</B> and <B className='text-blue-400'>React Native</B> my 
+                    best personal projects, and <B>helping businesses</B> to reach their 🎯<B>goals</B>.
                 </p>
             </Fade>
 
