@@ -111,16 +111,6 @@ const Home = () => {
                     />
                 </div>
             </div>
-
-
-            <div className='min-h-screen z-50 text-2xl text-white bg-[#273036]'>
-                <div className='pb-10 max-w-3xl px-5 md:px-0 pt-40 min-h-screen mx-auto'>
-                    <Bio ref={aboutRef} className='' />
-                    {/* <Skills ref={skillsRef} className='mt-40' /> */}
-                    <Jobs className='mt-40' />
-                </div>
-                {/* <Footer /> */}
-            </div>
         </div>
     )
 }
