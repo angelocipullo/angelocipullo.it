@@ -62,7 +62,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className='min-h-screen flex relative bg'>
+            <div className='min-h-screen flex relative bg-holo-animated'>
                 <div className={'h-screen relative overflow-hidden flex flex-1 justify-center items-center'} >
 
                     {navbar((styles, viewProjects) => !viewProjects &&
