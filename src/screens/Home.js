@@ -62,10 +62,10 @@ const Home = () => {
 
     return (
         <div>
-            <div className='min-h-screen flex relative bg-holo-animated'>
+            <div className='h-screen overflow-hidden flex relative bg-holo-animated'>
                 <div className={'h-screen relative overflow-hidden flex flex-1 justify-center items-center'} >
 
-                    {navbar((styles, viewProjects) => !viewProjects &&
+                    {/* {navbar((styles, viewProjects) => !viewProjects &&
                         <animated.div className='absolute top-0 right-0 left-0' style={styles}>
                             <Navbar 
                                 scrollToAbout={scrollToAbout}  
@@ -73,7 +73,7 @@ const Home = () => {
                                 toggleProjects={toggleProjects} 
                             />
                         </animated.div>
-                    )}
+                    )} */}
                     
                     {socials((styles, viewProjects) => !viewProjects &&
                         <animated.div className='absolute right-10 top-6' style={styles}>
